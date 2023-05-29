@@ -257,6 +257,15 @@ footer > *{
   display: flex;
 }
 
+.right-contaienr-footer > * {
+  display: flex;
+  align-items: center;
+}
+
+.right-contaienr-footer > :nth-child(n2) {
+  display: block;
+}
+
 .mid-footer-container > .playbar, .mid-icon-footer{
   display: flex;
   justify-content: center;
@@ -284,8 +293,11 @@ footer > *{
   height: 2px;
   border-radius: 15px;
   display: inline-block;
+}
 
-  
+.img{
+  width: 50px;
+  padding-right: 10px;
 }
 
 
