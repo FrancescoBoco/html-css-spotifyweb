@@ -14,4 +14,315 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* GENERAL */
+ /* GENERAL */
+
+ .container{
+    width: 100%;
+    padding: 0 10px;
+ }
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20;
+ }
+
+ .row > .item{
+    margin: 0 10px;
+    width: calc((100% / 6) - 20px);
+ }
+ /* MAIN CONTENT  */
+
+ #main-content{
+    height: calc(100vh - 100px);
+    display: flex;
+
+ }
+
+ #main-content > aside{
+    width: 200px;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ aside > * {
+  padding-left: 20px;
+ }
+
+ aside div:first-child{
+  padding: 10px 20px;
+ }
+
+ #main-content > aside >section div  nav  ul li a {
+  list-style: none;
+  text-decoration: none;
+  color:grey;
+ }
+ #main-content > aside >section div nav ul {
+  list-style: none;
+ }
+
+
+
+.users{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+}
+ /* MIAN  */
+
+ #main-content > main,
+ #main-content > main > header
+ {
+    width: calc(100% - 200px);
+ }
+
+ #main-content > main > header {
+position: fixed;
+top: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px ;
+text-align: right;
+padding: 20px;
+display: flex;
+justify-content: flex-end;
+}
+
+
+#main-content > main > header > div{
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+#main-content > main > section {
+overflow-y: auto ; /* fa uscire la scroll bar solo se ce ne bisogno */
+height: 100%;
+padding-top:100px;
+} 
+
+#main-content > main > section nav ul  {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    } 
+ 
+
+#main-content > main > section nav ul li a  {
+    padding: 5px 10px;
+    list-style: none;
+    text-decoration: none;
+    color:#76787D;
+    font-weight: bold;
+} 
+
+#main-content > main > section nav ul > :first-child    {
+  
+border-bottom:  3px solid #B4E856;
+width
+} 
+
+h2{
+  color: white
+}
+
+h4{
+  color: white;
+}
+h5{
+  color: #76787D
+}
+
+img{
+  width: 100%;
+}
+
+.cover{
+  position: relative;
+}
+
+.fa-circle-play{
+  font-size: 4em;
+}
+
+.overlay{
+  z-index: 1;
+  position: absolute ;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.backgraund{
+  background-color: rgba(0, 0, 0, 0.5) ;
+  z-index: 1;
+}
+
+.cover:hover .overlay{
+  display: block;
+  transition: 0.3s;
+
+}
+
+
+  /* FOOTER  */
+
+  footer{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #282828;
+}
+
+footer > *{
+  padding: 20px;
+  color: white ;
+}
+
+
+.contaienr-footer{
+  display: flex;
+  align-items: center;
+}
+
+.left-contaienr-footer,
+.right-contaienr-footer{
+  display: flex;
+}
+
+.mid-footer-container > .playbar, .mid-icon-footer{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.playbar > .bar{
+  align-items: center;
+  display: flex;
+  padding:10px;
+}
+
+.left-bar{
+  width: 50px;
+  background-color: black;
+  height: 2px;
+  border-radius: 15px;
+  display: inline-block;
+
+}
+.right-bar{
+  width: 200px;
+  background-color: yellow;
+  height: 2px;
+  border-radius: 15px;
+  display: inline-block;
+
+  
+}
+
+
+  /* DEBUG */
+  #main-content > aside,
+  .debug .main-content,
+  .debug footer{
+    /* border: 1px solid black; */
+  }
+
+  #main-content > aside{
+    background-color: brown;
+  }
+
+  .debug #main-content{
+    background-color: lightcoral;
+  }
+
+  #main-content > main{
+    background-color: #151921;
+  }
+
+  .debug footer{
+    /* background-color: aquamarine; */
+  }
+
+  .debug footer > *{
+    /* background-color: purple; */
+  }
+
+  .debug .row{
+    /* border: 1px solid black; */
+  }
+
+  .debug .item{
+    /* border: 2px solid green; */
+  }
+
+  .debug .mid-footer-container{
+    width: calc( 100% / 3);
+    /* background-color: blueviolet; */
+  }
+
+  /* .debug  .right-contaienr-footer{
+     width: 20%;
+    background-color: blueviolet; */
+  }
+  
+
+/* 
+---------------------------------------------
+RESPONSIVE 
+---------------------------------------------
+ */
+
+
+
+
+
+
+ /* Tablet: fino a 1100px */
+
+ @media screen and (max-width: 1100px){
+    .row > .item{
+        margin: 0 10px;
+        width: calc((100% / 4) - 20px);
+     }
+
+ }
+
+
+ /* Mobile normale: fino a 700px */
+
+ @media screen and (max-width: 700px){
+    .row > .item{
+        margin: 0 10px;
+        width: calc((100% / 2) - 20px);
+     }
+
+     
+
+ }
+
+
+  /* Mobile piccolo: fino a 600px */
+
+  @media screen and (max-width: 600px){
+    #main-content > aside{
+        width: 80px;
+     }
+    
+     #main-content > main,
+     #main-content > main > header
+     {
+        width: calc(100% - 80px);
+     }
+
+  }
