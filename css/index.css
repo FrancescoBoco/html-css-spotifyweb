@@ -65,6 +65,13 @@
   text-decoration: none;
   color:grey;
  }
+
+ #main-content > aside >section div  nav  ul li:hover  a{
+  color:white;
+  border-left: 3px solid #B4E856 ;
+  font-size: 1.1em;
+
+ }
  #main-content > aside >section div  nav  ul li  {
   padding: 10px 0;
   font-weight: bold;
@@ -164,11 +171,13 @@ padding-top:100px;
     font-weight: bold;
 } 
 
-#main-content > main > section nav ul > :first-child    {
-  
-border-bottom:  3px solid #B4E856;
-width
+#main-content > main > section nav ul li:hover a  {
+  color:white;
+  border-bottom: 3px solid #B4E856 ;
+  font-size: 1.1em;
 } 
+
+
 
 h2{
   color: white;
