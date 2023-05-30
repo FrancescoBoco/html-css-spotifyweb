@@ -294,12 +294,31 @@ footer > *{
   padding:10px;
 }
 
+.left-bar:hover{
+  
+  background-color:#B4E856;
+  display: inline-block;
+
+}
+.left-bar:hover  > *{
+  
+  display: inline-block;
+}
+
+.button-bar{
+  position: absolute;
+  right: 0;
+  top: -3px;
+  display: none;
+}
+
 .left-bar{
   width: 50px;
   background-color: #C3C3C3;
   height: 2px;
   border-radius: 15px;
   display: inline-block;
+  position: relative;
 
 }
 .right-bar{
@@ -377,7 +396,7 @@ footer > *{
   /* .debug  .right-contaienr-footer{
      width: 20%;
     background-color: blueviolet; */
-  }
+  /* } */
   
 
 /* 
@@ -427,5 +446,13 @@ RESPONSIVE
      {
         width: calc(100% - 80px);
      }
+
+     aside > div> img{
+      background-image: url(../img/logo-small.svg);
+      background-repeat: no-repeat;
+     }
+
+     
+     
 
   }
