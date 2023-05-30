@@ -36,6 +36,7 @@
  #main-content{
     height: calc(100vh - 100px);
     display: flex;
+    overflow: hidden;
 
  }
 
@@ -64,6 +65,10 @@
   list-style: none;
   text-decoration: none;
   color:grey;
+  transition: 0.5s;
+  font-size: 0.8em;
+
+
  }
 
  #main-content > aside >section div  nav  ul li:hover  a{
@@ -169,6 +174,8 @@ padding-top:100px;
     text-decoration: none;
     color:#76787D;
     font-weight: bold;
+    transition: 0.5s;
+    font-size: 0.8em;
 } 
 
 #main-content > main > section nav ul li:hover a  {
@@ -181,6 +188,7 @@ padding-top:100px;
 
 h2{
   color: white;
+  padding: 10px 0;
 }
 h3{
   color: white;
@@ -220,7 +228,6 @@ img{
 
 .cover:hover .overlay{
   display: block;
-  transition: 0.3s;
 }
 
 .container > h5 {
@@ -256,6 +263,14 @@ footer > *{
 .right-contaienr-footer{
   display: flex;
 }
+.left-contaienr-footer > span{
+  padding-left: 10px;
+  font-size: 0.9em;
+}
+
+.left-contaienr-footer >  span:hover > i{
+  font-size: 1.2em;
+}
 
 .right-contaienr-footer > * {
   display: flex;
@@ -268,7 +283,7 @@ footer > *{
 
 .mid-footer-container > .playbar, .mid-icon-footer{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
@@ -281,7 +296,7 @@ footer > *{
 
 .left-bar{
   width: 50px;
-  background-color: black;
+  background-color: #C3C3C3;
   height: 2px;
   border-radius: 15px;
   display: inline-block;
@@ -289,7 +304,29 @@ footer > *{
 }
 .right-bar{
   width: 200px;
-  background-color: yellow;
+  background-color: #5B5B5B;
+  height: 2px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.playbar > span {
+  font-size: 0.7em;
+  align-items: center;
+  display: flex;
+}
+
+.left-bar-2{
+  width: 20px;
+  background-color: #C3C3C3;
+  height: 2px;
+  border-radius: 15px;
+  display: inline-block;
+
+}
+.right-bar-2{
+  width: 80px;
+  background-color: #5B5B5B;
   height: 2px;
   border-radius: 15px;
   display: inline-block;
